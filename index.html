@@ -136,40 +136,74 @@
     <a target=”_blank” class="button" href="https://discord.gg/EZBvwBZkXv" style="margin-bottom: 15px;"><img style="margin-right:10px;" class="icon" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-mail.png"><h3 style="padding-top: 6px;">LetsLearnEverythingPod@gmail.com</h3></a>
 
     <iframe sandbox="allow-same-origin allow-scripts allow-top-navigation allow-popups allow-forms" scrolling=no width="100%" height="185" frameborder="0" src="https://embed.radiopublic.com/e?if=TheDaily:dHJlbmRpbmctaW4tc2VhcmNo&ge=s1!65547bc2d2844445fe88df861e3ce63f1c57793c"></iframe>
-    <h2 style="margin-bottom: 20px;">The podcast where we learn anything and everything interesting!</h2>
-    <u><h2 style="margin-bottom: 10px;">Your hosts are</h2></u>
-    <h3 class="bio"><a target="_blank" href="https://carolineroperart.carrd.co/">Caroline Roper (they/them)</a>
-      <a style="margin-left: 10px;"  target=”_blank” href="https://www.tiktok.com/@caroline.roper.art">
-        <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-tiktok.png">
-      </a>
-      <a target=”_blank” href="https://twitter.com/carolinethebug">
-        <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-twitter.png">
-      </a>
-      <a target=”_blank” href="https://www.instagram.com/caroline.roper.art/?hl=en">
-        <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-instagram.png">
-      </a>
-    </h3>
-    <h3 class="bio"><a target="_blank" href="https://www.tomlum.com/">Tom Lum (he/him)</a>
-      <a style="margin-left: 10px;" target=”_blank” href="https://www.tiktok.com/@tomlumperson">
-        <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-tiktok.png">
-      </a>
-      <a target=”_blank” href="https://twitter.com/tomlumperson">
-        <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-twitter.png">
-      </a>
-      <a target=”_blank” href="https://www.instagram.com/tomlumperson">
-        <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-instagram.png">
-      </a>
-    </h3>
-    <h3 class="bio"><a target="_blank" href="https://linktr.ee/ellahubber">Ella Hubber (she/her)</a>
-      <a style="margin-left: 10px;" target=”_blank” href="https://www.tiktok.com/@big_science_energy">
-        <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-tiktok.png">
-      </a>
-      <a target=”_blank” href="https://twitter.com/ellahubber">
-        <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-twitter.png">
-      </a>
-    </h3>
+    <h2 style="margin-bottom: 50px;">The podcast where we learn anything and everything interesting!</h2>
+    <h2 style="margin-bottom: 10px;">Your hosts are</h2>
+    <div id="wrapper">
+      <h3 class="bio"><a target="_blank" href="https://carolineroperart.carrd.co/">Caroline Roper (they/them)</a>
+        <a style="margin-left: 10px;"  target=”_blank” href="https://www.tiktok.com/@caroline.roper.art">
+          <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-tiktok.png">
+        </a>
+        <a target=”_blank” href="https://twitter.com/carolinethebug">
+          <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-twitter.png">
+        </a>
+        <a target=”_blank” href="https://www.instagram.com/caroline.roper.art/?hl=en">
+          <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-instagram.png">
+        </a>
+      </h3>
+      <h3 class="bio"><a target="_blank" href="https://www.tomlum.com/">Tom Lum (he/him)</a>
+        <a style="margin-left: 10px;" target=”_blank” href="https://www.tiktok.com/@tomlumperson">
+          <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-tiktok.png">
+        </a>
+        <a target=”_blank” href="https://twitter.com/tomlumperson">
+          <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-twitter.png">
+        </a>
+        <a target=”_blank” href="https://www.instagram.com/tomlumperson">
+          <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-instagram.png">
+        </a>
+      </h3>
+      <h3 class="bio"><a target="_blank" href="https://linktr.ee/ellahubber">Ella Hubber (she/her)</a>
+        <a style="margin-left: 10px;" target=”_blank” href="https://www.tiktok.com/@big_science_energy">
+          <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-tiktok.png">
+        </a>
+        <a target=”_blank” href="https://twitter.com/ellahubber">
+          <img class="iconsmall" src="https://s3.us-east-2.amazonaws.com/tomlum/lle-twitter.png">
+        </a>
+      </h3>
+    </div>
 
   </div>
 </body>
-<footer></footer>
+<footer>
+  <script>
+    function shuffle(array) {
+      let currentIndex = array.length,  randomIndex;
+
+      // While there remain elements to shuffle...
+      while (currentIndex != 0) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex], array[currentIndex]];
+      }
+
+      return array;
+    }
+
+    var arr = shuffle([0,1,2]);
+    var wrapper = document.getElementById("wrapper");
+    var items = wrapper.children;
+    var elements = document.createDocumentFragment();
+
+    arr.forEach(function(idx) {
+        elements.appendChild(items[idx].cloneNode(true));
+    });
+
+    wrapper.innerHTML = null;
+    wrapper.appendChild(elements);
+  </script>
+</footer>
 </html>
